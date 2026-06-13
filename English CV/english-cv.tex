@@ -1,0 +1,617 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSimpleItem}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING----------
+	% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+		%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+		% \end{tabular*}
+	
+	\begin{center}
+		\textbf{\Huge \scshape Mahija Ibad Pradipta} \\ \vspace{1pt}
+		\small +6281288092766 $|$ \href{mailto:mahijapradipta86@gmail.com}{\underline{mahijapradipta86@gmail.com}} $|$ 
+		\href{https://linkedin.com/in/mahijaibad}{\underline{linkedin.com/in/mahijaibad}} $|$
+		\href{https://github.com/Eeja07}{\underline{github.com/Eeja07}}
+	\end{center}
+	
+	
+	%-----------EDUCATION-----------
+	\section{EDUCATION}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Sepuluh Nopember Institute of Technology | Surabaya}{August 2022 – Present}
+	{Bachelor of Computer Engineering}{GPA: 3.21/4.00}
+	
+	\resumeSubheading
+	{SMAN 4 Jakarta | Jakarta}{July 2019 – May 2022}
+	{Science Major}{Final Score: 86/100}
+	
+	\resumeSubHeadingListEnd
+	
+%	
+%	%-----------EXPERIENCE-----------
+%	\section{Experience}
+%	\resumeSubHeadingListStart
+%	
+%	\resumeSubheading
+%	{Undergraduate Research Assistant}{June 2020 -- Present}
+%	{Texas A\&M University}{College Station, TX}
+%	\resumeItemListStart
+%	\resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+%	\resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+%	\resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+%	\resumeItemListEnd
+%	
+%	% -----------Multiple Positions Heading-----------
+%	%    \resumeSubSubheading
+%	%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%	%     \resumeItemListStart
+%	%        \resumeItem{Apache Beam}
+%	%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%	%     \resumeItemListEnd
+%	%    \resumeSubHeadingListEnd
+%	%-------------------------------------------
+%	
+%	\resumeSubheading
+%	{Information Technology Support Specialist}{Sep. 2018 -- Present}
+%	{Southwestern University}{Georgetown, TX}
+%	\resumeItemListStart
+%	\resumeItem{Communicate with managers to set up campus computers used on campus}
+%	\resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+%	\resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+%	\resumeItemListEnd
+%	
+%	\resumeSubheading
+%	{Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+%	{Southwestern University}{Georgetown, TX}
+%	\resumeItemListStart
+%	\resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+%	\resumeItem{Developed a game in Java to test the generated dungeons}
+%	\resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+%	\resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+%	\resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+%	\resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+%	\resumeItemListEnd
+%	
+%	\resumeSubHeadingListEnd
+	
+		%-----------EXPERIENCE-----------
+	\section{WORK EXPERIENCE}
+	
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Digital Signal Processing Laboratory Course | M-IOT ITS}
+	{October 2025 – December 2025}
+	{Staff - Teaching Assistant}{On-site}
+	\resumeItemListStart
+	\resumeItem{Assisted and supervised students during Digital Signal Processing laboratory sessions}
+	\resumeItem{Evaluated students' understanding of course materials, assignment completion, and discipline throughout laboratory activities}
+	\resumeItem{Reviewed and assessed Digital Signal Processing laboratory reports}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Introduction to Programming Laboratory Course | M-IOT ITS}
+	{July 2025 – December 2025}
+	{Secretary and Treasurer - Teaching Assistant}{On-site}
+	\resumeItemListStart
+	\resumeItem{Supervised, guided, and evaluated students during laboratory sessions, mentoring activities, laboratory reports, and final projects}
+	\resumeItem{Prepared laboratory modules and managed administrative activities}
+	\resumeItem{Managed attendance records and assessment recapitulation for teaching assistants and students}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{PT Winnicode Garuda Indonesia | Bandung}
+	{March 2025 – September 2025}
+	{Intern - Full-Stack Developer}{Remote}
+	\resumeItemListStart
+	\resumeItem{Developed UNTERN (U Need Intern), a web application connecting internship seekers with companies seeking talent}
+	\resumeItem{Managed the entire application development lifecycle, including design, implementation, testing, and deployment}
+	\resumeItem{Analyzed user requirements and translated them into application features and functionalities}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{PT Lintasarta | Central Jakarta}
+	{July 2025 – August 2025}
+	{Intern - IT Services Management (Infrastructure)}{On-site}
+	\resumeItemListStart
+	\resumeItem{Supported activities within the IT Infrastructure subdivision under the IT Services Management Department, Corporate IT Division}
+	\resumeItem{Participated in hardware deployment processes to support company operations}
+	\resumeItem{Learned enterprise network architecture and IT service management practices within a corporate environment}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Introduction to Programming Laboratory Course | M-IOT ITS}
+	{September 2024 – March 2025}
+	{Staff - Teaching Assistant}{On-site}
+	\resumeItemListStart
+	\resumeItem{Assisted Electrical Engineering, Telecommunications Engineering, and Biomedical Engineering students during Introduction to Programming laboratory sessions}
+	\resumeItem{Guided students through Introduction to Programming mentoring activities}
+	\resumeItem{Evaluated final project presentations and laboratory reports}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Robotics Extracurricular | SDN Klampis Ngasem I/246 - Surabaya}
+	{August 2023 – June 2024}
+	{Instructor}{On-site}
+	\resumeItemListStart
+	\resumeItem{Guided and mentored 4th, 5th, and 6th grade students participating in robotics extracurricular activities}
+	\resumeItem{Taught fundamental robotics concepts through theory and hands-on practice using the 4-Wheel Obstacle Avoidance Robot Kit}
+	\resumeItem{Delivered robotics learning materials through interactive web-based simulations}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	% -----------Multiple Positions Heading-----------
+	%    \resumeSubSubheading
+	%     {Software Engineer I}{Oct 2014 - Sep 2016}
+	%     \resumeItemListStart
+	%        \resumeItem{Apache Beam}
+	%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+	%     \resumeItemListEnd
+	%    \resumeSubHeadingListEnd
+	%-------------------------------------------
+	
+	%-----------PROJECTS-----------
+%	\section{Projects}
+%	\resumeSubHeadingListStart
+%	\resumeProjectHeading
+%	{\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%	\resumeItemListStart
+%	\resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%	\resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%	\resumeItem{Visualized GitHub data to show collaboration}
+%	\resumeItem{Used Celery and Redis for asynchronous tasks}
+%	\resumeItemListEnd
+%	\resumeProjectHeading
+%	{\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%	\resumeItemListStart
+%	\resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%	\resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%	\resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%	\resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%	\resumeItemListEnd
+%	\resumeSubHeadingListEnd
+	
+	\section{PROJECTS}
+	\resumeSubHeadingListStart
+	
+	\resumeProjectHeading
+	{\textbf{DIY Smart CCTV Monitoring System} $|$ \emph{Docker, EMQX, MinIO, MySQL, Laravel, Webmin, Cloudflared}}{2026}
+	\resumeItemListStart
+	\resumeItem{Architected and deployed a self-hosted CCTV platform on an Intel NUC server integrated with ESP32-CAM edge devices for image collection and monitoring}
+	\resumeItem{Managed a multi-service Docker environment including Laravel, MySQL, MinIO, phpMyAdmin, EMQX MQTT broker, and supporting application services}
+	\resumeItem{Implemented MQTT-based data communication, server administration and monitoring through Webmin, and secure public access using Cloudflare Tunnel}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{Autonomous Human Search System Using Drone with Pi 5} $|$ \emph{YOLO, ONNX, MAVSDK, Edge Device}}{2026}
+	\resumeItemListStart
+	\resumeItem{Designed and integrated a drone power distribution system capable of providing stable power for Raspberry Pi 5 computing requirements}
+	\resumeItem{Evaluated and optimized YOLOv8n ONNX model performance in a headless Linux environment on Raspberry Pi 5 for real-time human detection}
+	\resumeItem{Developed an autonomous MAVSDK-based system with autonomous navigation, victim documentation, and duplicate target tracking prevention capabilities}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{Self-Hosted Homelab Infrastructure} $|$ \emph{Debian, Docker, Cloudflare Tunnel, Webmin, Linux Administration}}{2025}
+	\resumeItemListStart
+	\resumeItem{Built and maintained a self-hosted homelab environment using repurposed laptop hardware to run personal applications and services}
+	\resumeItem{Deployed and managed multiple web applications and supporting services using Docker containers on a Debian-based server}
+	\resumeItem{Implemented secure remote access through Cloudflare Tunnel and performed server administration and monitoring using Webmin}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{SwiMate} $|$ \emph{Flutter, Dart, Supabase, PostgreSQL, TensorFlow Lite}}{2025}
+	\resumeItemListStart
+	\resumeItem{Developed a mobile application to support swimming training and performance monitoring}
+	\resumeItem{Integrated mobile sensors and machine learning models to support activity analysis}
+	\resumeItem{Implemented backend services and data management using Supabase and PostgreSQL}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{UNTERN} $|$ \emph{JavaScript, PostgreSQL, Vite}}{2025}
+	\resumeItemListStart
+	\resumeItem{Developed a web platform connecting internship seekers with companies seeking talent}
+	\resumeItem{Managed the entire software development lifecycle from requirements analysis to deployment}
+	\resumeItem{Implemented application features and system functionalities to support the internship recruitment process}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{SARVIO-X} $|$ \emph{JavaScript, DJI Tello, PyTorch}}{2025}
+	\resumeItemListStart
+	\resumeItem{Developed a web-based application for monitoring and interacting with DJI Tello drones}
+	\resumeItem{Implemented user interface components and drone control functionalities}
+	\resumeItem{Supported drone operations and monitoring through a browser-based platform}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{Course Web Application} $|$ \emph{JavaScript, PostgreSQL}}{2025}
+	\resumeItemListStart
+	\resumeItem{Developed a web application for course management and learning activities}
+	\resumeItem{Implemented frontend and backend functionalities to support academic workflows}
+	\resumeItem{Designed features for managing course-related information and user interactions}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{CarVole 2D Car Game} $|$ \emph{C++, graphics.h}}{2024}
+	\resumeItemListStart
+	\resumeItem{Developed a 2D car game using C++ and graphics.h}
+	\resumeItem{Implemented game mechanics, object movement, and collision handling}
+	\resumeItem{Designed interactive gameplay elements and user controls}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{GUI Application with wxWidgets} $|$ \emph{C++, wxWidgets}}{2023}
+	\resumeItemListStart
+	\resumeItem{Developed a desktop graphical user interface application using wxWidgets}
+	\resumeItem{Applied object-oriented programming principles in application development}
+	\resumeItem{Implemented interactive user interface components and application features}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	\section{AWARDS}
+	\resumeSubHeadingListStart
+	
+	\resumeSimpleItem
+	{With Banyubramanta ITS:}
+	{}
+	
+	\resumeSimpleItem
+	{5th Place - Singapore Autonomous Underwater Vehicle Challenge (SAUVC) 2025}
+	{March 2025}
+	
+	\resumeSimpleItem
+	{1st Place - Indonesian Underwater Robot Competition National Level 2024}
+	{July 2024}
+	
+	\resumeSimpleItem
+	{3rd Place - Indonesian Underwater Robot Competition Regional Level II 2024}
+	{June 2024}
+	
+	\resumeSubHeadingListEnd
+	
+	\section{TRAINING}
+	\resumeSubHeadingListStart
+	
+	\resumeSimpleItem
+	{Intermediate Student Management Skills Training (LKMM-TM)}
+	{August 2024}
+	
+	\resumeSimpleItem
+	{Basic Student Management Skills Training (LKMM-TD)}
+	{November 2023}
+	
+	\resumeSimpleItem
+	{Pre-Basic Student Management Skills Training}
+	{September 2023}
+	
+	\resumeSimpleItem
+	{MAGE 9 Multimedia Workshop}
+	{August 2023}
+	
+	\resumeSimpleItem
+	{Basic Student Entrepreneurship Skills Training (LKMW-TD)}
+	{November 2022}
+	
+	\resumeSimpleItem
+	{Basic Scientific Writing Training (PKTI-TD)}
+	{October 2022}
+	
+	\resumeSubHeadingListEnd
+	
+	\section{ORGANIZATIONS}
+	
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{M-IOT Laboratory | Computer Engineering ITS | Surabaya}
+	{June 2025 – May 2026}
+	{Coordinator - Board of Directors}{On-site}
+	\resumeItemListStart
+	\resumeItem{Improved laboratory quality in both project development and human resource development aspects}
+	\resumeItem{Supervised overall timelines and task execution across all divisions and subdivisions}
+	\resumeItem{Coordinated laboratory management activities with external stakeholders and university administration}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{HIMATEKKOM ITS | Surabaya}
+	{March 2025 – February 2026}
+	{Head of Cadre Development Department - Board of Directors}{On-site}
+	\resumeItemListStart
+	\resumeItem{Guided IC and OC teams in executing all cadre development activities}
+	\resumeItem{Mentored SC members in designing assessment systems and activity timelines}
+	\resumeItem{Coordinated with students and the Computer Engineering Department regarding cadre development activities}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{M-IOT Laboratory | Computer Engineering ITS | Surabaya}
+	{August 2024 – June 2025}
+	{Archive Staff - Internal Division}{On-site}
+	\resumeItemListStart
+	\resumeItem{Managed archives of thesis topics and telematics projects conducted by M-IOT Laboratory assistants}
+	\resumeItem{Maintained archives of midterm and final examination materials for M-IOT specialization courses}
+	\resumeItem{Compiled learning materials for M-IOT specialization courses}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Banyubramanta Robotics Team ITS | Surabaya}
+	{July 2024 – May 2025}
+	{Head of Official Division - Board of Directors}{On-site}
+	\resumeItemListStart
+	\resumeItem{Led the Administration \& Finance, Public Relations \& Sponsorship, and Creative \& Branding subdivisions}
+	\resumeItem{Planned and supervised overall timelines and task execution across all subdivisions}
+	\resumeItem{Ensured smooth execution of the team's administrative and non-technical operations}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{HIMATEKKOM ITS | Surabaya}
+	{March 2024 – March 2025}
+	{Secretary and Treasurer Staff - Board of Directors}{On-site}
+	\resumeItemListStart
+	\resumeItem{Coordinated with the Computer Engineering Department regarding organizational administration}
+	\resumeItem{Prepared outgoing letters, meeting minutes, and certificate submissions for organizational activities}
+	\resumeItem{Maintained archives of important documents in both digital and physical formats}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{HIMATEKKOM ITS | Surabaya}
+	{April 2024 – December 2024}
+	{Steering Committee Staff - Cadre Development Department}{On-site}
+	\resumeItemListStart
+	\resumeItem{Coordinated with IC (Instructor Committee) and OC (Organizing Committee) regarding cadre development activities}
+	\resumeItem{Designed student assessment systems and overall cadre development timelines}
+	\resumeItem{Coordinated with students and the Computer Engineering Department regarding cadre development activities}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Banyubramanta Robotics Team ITS | Surabaya}
+	{February 2023 – July 2024}
+	{Senior Finance Staff - Official Division}{On-site}
+	\resumeItemListStart
+	\resumeItem{Recorded team income and expenditures}
+	\resumeItem{Managed team budget allocation}
+	\resumeItem{Prepared accountability reports, financial reports, and budget plans}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Banyubramanta Robotics Team ITS | Surabaya}
+	{November 2022 – January 2023}
+	{Finance and Administration Intern - Official Division}{On-site}
+	\resumeItemListStart
+	\resumeItem{Prepared sponsorship and administrative proposals}
+	\resumeItem{Prepared contracts, accountability reports, and budget plans}
+	\resumeItem{Created content for the team's social media platforms}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{ITS Robotics Club | Surabaya}
+	{September 2022 – February 2023}
+	{Member}{On-site}
+	\resumeItemListStart
+	\resumeItem{Actively participated in organizational programs and activities}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{ITS IBC Club | Surabaya}
+	{September 2022 – September 2023}
+	{Member}{On-site}
+	\resumeItemListStart
+	\resumeItem{Actively participated in organizational programs and activities}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	\section{COMMITTEES}
+	
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Multimedia And Game Event 10 | Computer Engineering ITS}
+	{February 2024 – February 2025}
+	{Head of Event Division - Board of Directors}{On-site}
+	\resumeItemListStart
+	\resumeItem{Guided staff in designing and executing IoT, Multimedia, and Robotics workshops}
+	\resumeItem{Guided staff in planning and executing opening ceremonies, talk shows, exhibitions, and closing events}
+	\resumeItem{Supervised and evaluated the implementation of workshops, talk shows, exhibitions, opening ceremonies, and closing events}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Multimedia And Game Event 9 | Computer Engineering ITS}
+	{February 2023 – March 2024}
+	{Staff - Secretariat Division}{On-site}
+	\resumeItemListStart
+	\resumeItem{Managed activity data collection and documentation}
+	\resumeItem{Prepared communication materials, attendance records, feedback forms, and meeting minutes}
+	\resumeItem{Served as the person in charge of one workshop}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{HGTS X SE 8.0 | HIMATEKKOM ITS}
+	{October 2023}
+	{Staff - Teaching Division}{On-site}
+	\resumeItemListStart
+	\resumeItem{Designed learning concepts for students of MTs 19 Surabaya}
+	\resumeItem{Prepared presentation materials for teaching activities}
+	\resumeItem{Taught image detection and pose detection topics to students of MTs 19 Surabaya}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{ISC - 63rd ITS Anniversary | ITS}
+	{September 2023 – November 2023}
+	{Badminton Staff - Event Division}{On-site}
+	\resumeItemListStart
+	\resumeItem{Ensured the smooth execution of the inter-faculty badminton tournament}
+	\resumeItem{Coordinated match schedules and tournament facilities}
+	\resumeItem{Managed documentation and match result records}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{TDC Summit Fest 2023 | TDC ITS}
+	{August 2023 – November 2023}
+	{TDC For Startup Staff - Event Division}{On-site}
+	\resumeItemListStart
+	\resumeItem{Prepared implementation and technical guidelines for startup bootcamp mentoring activities}
+	\resumeItem{Prepared implementation and technical guidelines for startup bootcamp coaching activities}
+	\resumeItem{Served as Master of Ceremony (MC) during startup bootcamp mentoring sessions}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{SPS 128 | HIMATEKKOM ITS}
+	{June 2023 – September 2023}
+	{Staff - Event Division}{On-site}
+	\resumeItemListStart
+	\resumeItem{Prepared implementation and technical guidelines for the 128th FTE ITS Graduation Appreciation Event}
+	\resumeItem{Prepared event rundown for the 128th FTE ITS Graduation Appreciation Event}
+	\resumeItem{Served as Liaison Officer for the Head of the Computer Engineering Department}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Inclenation 2023 | BEM FTEIC ITS}
+	{June 2023 – August 2023}
+	{Staff - Mentor Division}{On-site}
+	\resumeItemListStart
+	\resumeItem{Mentored 20 freshmen from 6 departments and 10 study programs within FTEIC}
+	\resumeItem{Provided guidance and support to freshmen throughout Inclenation 2023}
+	\resumeItem{Served as an internalization facilitator during Inclenation 2023}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	\section{SKILLS}
+	
+	\resumeItemListStart
+	\resumeItem{\textbf{Programming Languages:} JavaScript, Python, C++, Dart, SQL}
+	\resumeItem{\textbf{Web Development:} Laravel, Vite, REST API, PostgreSQL, MySQL, React}
+	\resumeItem{\textbf{Mobile Development:} Flutter}
+	\resumeItem{\textbf{Infrastructure \& DevOps:} Linux (Debian \& Ubuntu), Docker, Cloudflare Tunnel, Webmin, MinIO, EMQX}
+	\resumeItem{\textbf{Networking:} TCP/IP, MQTT, Network Troubleshooting, WebSocket}
+	\resumeItem{\textbf{AI \& Computer Vision:} YOLO, ONNX, TensorFlow Lite, OpenCV}
+	\resumeItem{\textbf{Tools:} Git, GitHub, Postman, phpMyAdmin}
+	\resumeItem{\textbf{Languages:} Indonesian (Native), Javanese (Conversational), English (Professional Working Proficiency)}
+	\resumeItemListEnd
+	
+	%
+	%-----------PROGRAMMING SKILLS-----------
+%	\section{Technical Skills}
+%	\begin{itemize}[leftmargin=0.15in, label={}]
+%		\small{\item{
+%				\textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+%				\textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+%				\textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+%				\textbf{Libraries}{: pandas, NumPy, Matplotlib}
+%		}}
+%	\end{itemize}
+	
+	
+	%-------------------------------------------
+\end{document}
